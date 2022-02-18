@@ -17,7 +17,7 @@ do
       yesterday=`date -d "$ISO8601 -1-day" +%Y-%m-%d`
       twodays=`date -d "$ISO8601 -2-day" +%Y-%m-%d`
       echo "open tankur.vedur.is" > $CLD/tmp/lftpinput
-      echo "user jbox FTP4jbox" >> $CLD/tmp/lftpinput
+      echo "user $USERNAME $PASSWD" >> $CLD/tmp/lftpinput
       echo "cd inc/SICE/NRT" >> $CLD/tmp/lftpinput
       #for area in FransJosefLand Greenland Iceland NorthernArcticCanada Norway NovayaZemlya SevernayaZemlya SouthernArcticCanada Svalbard 
       for area in FransJosefLand Greenland Iceland NorthernArcticCanada NovayaZemlya SevernayaZemlya SouthernArcticCanada Svalbard 
